@@ -1,0 +1,56 @@
+header {
+
+}
+
+nav {
+
+}
+
+.hero {
+
+}
+
+.offset-content {
+    width: 50%;
+    padding: 40px;
+}
+
+.offset-media {
+    width: 50%;
+}
+
+.go-left {
+    float: left;
+}
+.go-right {
+    float: right;
+}
+
+.about {
+
+}
+
+.videos {
+
+}
+
+.team {
+
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    padding: 50px;
+    margin: 0px;
+    background-color: #5AB56E;
+    text-align: center;
+}
+
+#play-btn {
+    background-color: #5AB56E;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+}
