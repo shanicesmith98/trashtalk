@@ -1,2 +1,2 @@
 # trashtalk
-website for trashtalk
+Website for the PC/VR game, Trash Talk
