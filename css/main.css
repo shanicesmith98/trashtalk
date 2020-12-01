@@ -1,9 +1,37 @@
-header {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
 
+header {
+    background-color: #5AB56E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
-nav {
+header * {
+    display: inline;
+}
 
+header li {
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-transform: capitalize;
 }
 
 .hero {
@@ -13,6 +41,7 @@ nav {
 .offset-content {
     width: 50%;
     padding: 40px;
+    margin: 50px;
 }
 
 .offset-media {
@@ -47,10 +76,19 @@ footer {
     text-align: center;
 }
 
+footer a, footer p {
+    color: white;
+    text-decoration: none;
+}
+
 #play-btn {
     background-color: #5AB56E;
     color: white;
     padding: 5px;
     width: 100px;
     height: 50px;
+}
+
+#play-btn:hover {
+    background-color: #48a15b;
 }
