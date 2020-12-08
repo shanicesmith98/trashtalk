@@ -49,8 +49,9 @@ h1, h2, h3 {
     flex: 1 100%;
 }
 
-.hero {
+#hero {
     margin-top: 80px;
+    display: inline-block;
 }
 
 aside {
@@ -63,16 +64,16 @@ aside {
     line-height: 1.6;
 }
 
-.about {
+#about {
 
 }
 
-.videos {
+#videos {
     padding: 20px;
     line-height: 1.6;
 }
 
-.team {
+#team {
     padding: 20px;
     line-height: 1.6;
 }
