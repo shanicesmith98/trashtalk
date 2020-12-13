@@ -146,3 +146,15 @@ header {
 .team { order: 6; }
 .footer { order: 7; }
 }
+
+#videoNav{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#videoNav li{
+  list-style: none;
+  cursor: pointer;
+  margin: 5rem;
+
+}
