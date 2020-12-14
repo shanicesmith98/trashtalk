@@ -17,6 +17,7 @@ hr {
 
 header {
   background-color: #5AB56E;
+  font-size: 2vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,8 +42,14 @@ header li a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1 {
   text-transform: capitalize;
+  font-size: 5vh;
+}
+
+h2, h3 {
+  text-transform: capitalize;
+  font-size: 3vh;
 }
 
 .flex-container {
@@ -109,9 +116,10 @@ footer {
   text-align: center;
 }
 
-footer a, footer p, footer h6 {
+footer a, footer p {
   color: white;
   text-decoration: none;
+  font-size: 2vh;
 }
 
 footer a:hover {
@@ -120,6 +128,7 @@ footer a:hover {
 
 #play-btn {
   font-family: 'Niramit', sans-serif;
+  font-size: 1.6vh;
   letter-spacing: 0.5px;
   background-color: #5AB56E;
   border-radius: 4px;
