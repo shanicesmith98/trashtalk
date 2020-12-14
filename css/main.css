@@ -81,6 +81,10 @@ h1, h2, h3 {
   font-style: italic;
 }
 
+section {
+  text-align: center;
+}
+
 footer {
   height: 50px;
   width: 100%;
@@ -99,10 +103,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-#thanks {
-  text-transform: uppercase;
-}
-
 #play-btn {
   font-family: 'Niramit', sans-serif;
   letter-spacing: 0.5px;
@@ -117,6 +117,18 @@ footer a:hover {
 
 #play-btn:hover {
   background-color: #48a15b;
+}
+
+#videoNav{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#videoNav li{
+  list-style: none;
+  cursor: pointer;
+  margin: 5rem;
 }
 
 @media all and (max-width: 800px) {
@@ -135,16 +147,4 @@ footer a:hover {
   .videos { order: 5; }
   .team { order: 6; }
   .footer { order: 7; }
-}
-
-#videoNav{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-#videoNav li{
-  list-style: none;
-  cursor: pointer;
-  margin: 5rem;
-
 }
