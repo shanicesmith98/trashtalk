@@ -59,17 +59,6 @@ h1, h2, h3 {
   display: inline-block;
 }
 
-aside {
-  width: 50%;
-}
-
-.hero-description,
-.content-description {
-  padding: 20px;
-  line-height: 1.6;
-  text-align: center;
-}
-
 #about {
   text-align: center;
 }
@@ -84,10 +73,12 @@ aside {
   line-height: 1.6;
 }
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#team ul {
+  list-style-type: none;
+}
+
+.team-description {
+  font-style: italic;
 }
 
 footer {
@@ -129,21 +120,21 @@ footer a:hover {
 }
 
 @media all and (max-width: 800px) {
-header {
-  justify-content: space-around;
-}
+  header {
+    justify-content: space-around;
+  }
 
-.flex-container {
-  flex-direction: column;
-}
+  .flex-container {
+    flex-direction: column;
+  }
 
-.hero-media { order: 1;  }
-.hero-description { order: 2; }
-.content-media { order: 3; }
-.content-description { order: 4; }
-.videos { order: 5; }
-.team { order: 6; }
-.footer { order: 7; }
+  .hero-media { order: 1;  }
+  .hero-description { order: 2; }
+  .content-media { order: 3; }
+  .content-description { order: 4; }
+  .videos { order: 5; }
+  .team { order: 6; }
+  .footer { order: 7; }
 }
 
 #videoNav{
