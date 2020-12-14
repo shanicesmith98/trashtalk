@@ -1,108 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trash Talk: The Game</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-    getVideoUrl = function(selected){
+      getVideoUrl = function (selected) {
         let videoSelection = selected;
-        document.getElementById('video').innerHTML = (
-            `<iframe width="420" height="315"
+        document.getElementById(
+          "video"
+        ).innerHTML = `<iframe width="420" height="315"
             src=${videoSelection}>
-          </iframe>`);
-    }
+          </iframe>`;
+      };
     </script>
-</head>
-<body>
-  <div class="flex-containter">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#videos">Videos</a></li>
-          <li><a href="#team">Team</a></li>
+  </head>
+  <body>
+    <div class="flex-containter">
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="home"></div>
+
+      <div id="hero">
+        <aside class="hero-description"></aside>
+        <h1>Urban Climate Justice: A VR Exploratorium</h1>
+        <button id="play-btn">Play Game</button>
+      </div>
+
+      <div id="about">
+        <h2>What is Trash Talk?</h2>
+        <p>
+          Trash Talk is an immersive multi-media project created by the students
+          of CUNY New York City College of Technology enrolled in Dominika
+          Ksel’s Fall 2020 Technical Production course centered around achieving
+          Climate Justice, globally and locally. The game was made for PC/VR
+          devices and is intended to spread awareness of climate change with the
+          participation of those currently fighting against the economic and
+          social justice systems.
+        </p>
+        <hr />
+        <p>
+          While exploring and listening to the environment, help orchestrate and
+          clean the landscape by constructing sound sculptures and acoustic
+          architectural structures.
+        </p>
+      </div>
+
+      <div id="videos">
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/AjWfY7SnMBI"
+        >
+        </iframe>
+      </div>
+      <div id="videoSliderNav">
+        <ul id="videoNav">
+          <li
+            id="videoUrl"
+            onclick="getVideoUrl('https://www.youtube.com/embed/AjWfY7SnMBI')"
+          >
+            <img
+              src="https://via.placeholder.com/200"
+              alt="Video 1 Goes Here"
+            />
+          </li>
+          <li
+            id="videoUrl"
+            onclick="getVideoUrl('https://www.youtube.com/embed/nMfPqeZjc2c')"
+          >
+            <img
+              src="https://via.placeholder.com/200"
+              alt="Video 2 Goes Here"
+            />
+          </li>
+          <li
+            id="videoUrl"
+            onclick="getVideoUrl('https://www.youtube.com/embed/dQw4w9WgXcQ')"
+          >
+            <img
+              src="https://via.placeholder.com/200"
+              alt="Video 3 Goes Here"
+            />
+          </li>
         </ul>
-      </nav>
-    </header>
-    <div id="home"></div>
-    <div id="hero">
-      <aside class="hero-description">
-      </aside>
-      <h1>Urban Climate Justice: A VR Exploratorium</h1>
-      <button id="play-btn">Play Game</button>
-      <aside class="hero-media"></aside>
-      <br>
-      <img src="https://via.placeholder.com/468">
+      </div>
+
+      <div id="team">
+        <h2>Meet the team behind Trash Talk</h2>
+        <section id="audio">
+          <h3>Audio Group</h3>
+          <p>insert audio text here...</p>
+        </section>
+        <section id="mgmt">
+          <h3>Management Group</h3>
+          <p>insert management text here...</p>
+        </section>
+        <section id="programmer">
+          <h3>Programmer Group</h3>
+          <p>insert programmer text here...</p>
+        </section>
+        <section id="video">
+          <h3>Video Group</h3>
+          <p>insert video text here...</p>
+        </section>
+      </div>
+
+      <footer>
+        <a href="/" target="_blank">Play TrashTalk on itch.io</a>
+        <p>© TrashTalk, 2020. Go Green!</p>
+        <h6 id="thanks">
+          Thanks to Amber Payne, Lou Harris, Maxi Cohen, Rachel Shragis, Rayner
+          Ramirez, Saylor Pochan, Sto Len
+        </h6>
+      </footer>
+      
     </div>
-    <div id="about">
-      <h2>What is Trash Talk?</h2>
-      <p>Trash Talk is an immersive multi-media project created by the students of CUNY New York City College of Technology enrolled in Dominika Ksel’s Fall 2020 Technical Production course centered around achieving Climate Justice, globally and locally. The game was made for PC/VR devices and is intended to spread awareness of climate change with the participation of those currently fighting against the economic and social justice systems.</p>
-      <hr>
-      <p>While exploring and listening to the environment, help orchestrate and clean the landscape by constructing sound sculptures and acoustic architectural structures.</p>
-      <aside class="content-media"></aside>
-      <img src="https://via.placeholder.com/468">
-    </div>
-    <!-- <div id="videos">
-      <h2>View the videos from Trash Talk</h2>
-      <section>
-        <h3>Video One</h3>
-        <p>Insert videos here...</p>
-      </section>
-      <section>
-        <h3>Video Two</h3>
-        <p>Insert videos here...</p>
-      </section>
-      <section>
-          <h3>Video Three</h3>
-          <p>Insert videos here...</p>
-      </section>
-    </div> -->
-    <div id="video">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/AjWfY7SnMBI">
-      </iframe>
-    </div>
-    <div id="videoSliderNav">
-      <ul id="videoNav">
-        <li id="videoUrl" onclick="getVideoUrl('https://www.youtube.com/embed/AjWfY7SnMBI')">
-          <img src="https://via.placeholder.com/200" alt="Video 1 Goes Here">
-        </li>
-        <li id="videoUrl" onclick="getVideoUrl('https://www.youtube.com/embed/nMfPqeZjc2c')">
-          <img src="https://via.placeholder.com/200" alt="Video 2 Goes Here">
-        </li>
-        <li id="videoUrl" onclick="getVideoUrl('https://www.youtube.com/embed/dQw4w9WgXcQ')">
-          <img src="https://via.placeholder.com/200" alt="Video 3 Goes Here">
-        </li>
-      </ul>
-    </div>
-        <hr>
-        <div id="team">
-            <h2>Meet the team behind Trash Talk</h2>
-            <section id="audio">
-                <h3>Audio Group</h3>
-                <p>insert audio text here...</p>
-            </section>
-            <section id="mgmt">
-                <h3>Management Group</h3>
-                <p>insert management text here...</p>
-            </section>
-            <section id="programmer">
-                <h3>Programmer Group</h3>
-                <p>insert programmer text here...</p>
-            </section>
-            <section id="video">
-                <h3>Video Group</h3>
-                <p>insert video text here...</p>
-            </section>
-        </div>
-        <footer>
-            <a href="/" target="_blank">Play TrashTalk on itch.io</a>
-            <p>© TrashTalk, 2020. Go Green!</p>
-            <h6 id="thanks">Thanks to Amber Payne, Lou Harris, Maxi Cohen, Rachel Shragis, Rayner Ramirez, Saylor Pochan, Sto Len</h6>
-        </footer>
-    </div>
-</body>
+  </body>
 </html>
