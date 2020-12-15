@@ -71,5 +71,24 @@ getVideoUrl = function (selected) {
             </p>
           `);
           break;
+        case 'interviews':
+            $("#meetTeam").html(
+                `
+                <h3>Interviews</h3>
+                <p>
+                <span class="team-description">These individuals kindly shared their stories and knowledge regarding their experiences as environmental and social justice advocates, allowing us to accurately craft this project.</span>
+                <ul class="list-items">
+                    <li>Maxi Cohen</li>
+                    <li>Dioganhdih</li>
+                    <li>Lou Harris</li>
+                    <li>Sto Len</li>
+                    <li>Amber Payne</li>
+                    <li>Saylor Pochan</li>
+                    <li>Rayner Ramirez</li>
+                    <li>Rachel Shragis</li>
+                </ul>
+                </p>
+            `);
+            break;
     }
   };
