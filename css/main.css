@@ -117,7 +117,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-#play-btn {
+.web-btn {
   font-family: 'Niramit', sans-serif;
   font-size: 1.6vh;
   letter-spacing: 0.5px;
@@ -126,11 +126,12 @@ footer a:hover {
   border: none;
   color: white;
   padding: 5px;
-  width: 100px;
-  height: 50px;
+  width: 15vh;
+  height: 6vh;
+  padding: 10px;
 }
 
-#play-btn:hover {
+.web-btn:hover {
   background-color: #48a15b;
 }
 
@@ -138,9 +139,6 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   display: flex;
-}
-#videoButton{
-  padding: 2rem 4rem;
 }
 
 #videoNav li{
@@ -157,9 +155,6 @@ footer a:hover {
   list-style: none;
   cursor: pointer;
   margin: 5rem;
-}
-#meetTheTeamButton{
-  padding: 2rem 4rem;
 }
 
 @media all and (max-width: 800px) {
