@@ -125,10 +125,9 @@ footer a:hover {
   border-radius: 4px;
   border: none;
   color: white;
-  padding: 5px;
   width: 15vh;
   height: 6vh;
-  padding: 10px;
+  padding: 5px;
 }
 
 .web-btn:hover {
