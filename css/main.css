@@ -127,7 +127,6 @@ footer a:hover {
   color: white;
   width: 15vh;
   height: 6vh;
-  padding: 5px;
 }
 
 .web-btn:hover {
@@ -143,7 +142,7 @@ footer a:hover {
 #videoNav li{
   list-style: none;
   cursor: pointer;
-  margin: 5rem;
+  margin: 1rem;
 }
 #meetTheTeam{
   align-items: center;
@@ -153,7 +152,7 @@ footer a:hover {
 #meetTheTeam li{
   list-style: none;
   cursor: pointer;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 @media all and (max-width: 800px) {
