@@ -13,10 +13,78 @@
     <script type="text/javascript">
       getVideoUrl = function (selected) {
         let videoSelection = selected;
-        document.getElementById(
-          "video"
-        ).innerHTML = `<iframe width="640" height="340" src=${videoSelection}>
-          </iframe>`;
+        $('#video').html(`<iframe width="640" height="340" src=${videoSelection}>
+          </iframe>`);
+      };
+      meetThe = function(selectedTeam) {
+        switch (selectedTeam) {
+          case 'soundTeam':
+            $('#meetTeam').html(
+              `
+              <h3>The Sound Designers</h3>
+              <p>
+                <span class="team-description">
+                  This team curated all of the sound effects heard throughout the game, including the ambient noises of the ocean and subtle sounds played upon picking up trash.
+                </span>
+                <ul class="list-items">
+                  <li>Kenji Cano</li>
+                  <li>Sahan Jayalath</li>
+                  <li>Odalys Sanchez</li>
+                  <li>Justin Philip</li>
+                </ul>
+              </p>
+              `);
+            break;
+            case 'productManagers':
+              $("#meetTeam").html(
+                `
+                <h3>The Product Managers</h3>
+                <p>
+                  <span class="team-description">
+                    This team oversaw the general aspects of the project, and provided assistance to other groups in order to get necessary tasks completed in time.
+                  </span>
+                <ul class="list-items">
+                  <li>Hiuling Yen</li>
+                  <li>Patrick Rufino</li>
+                  <li>Giancarlo Macias</li>
+                  <li>Renuka Sookdeosingh</li>
+                </ul>
+                </p>
+                `);
+              break;
+            case 'programmers':
+              $("#meetTeam").html(
+                `
+                <h3>The Programmers</h3>
+                <p>
+                  <span class="team-description">
+                    This team worked on creating the scripts needed for the game’s player mechanics, including player movement, the ability to grab objects, and more.
+                  </span>
+                  <ul class="list-items">
+                    <li>Edwin Bishop</li>
+                    <li>Shanice Smith</li>
+                    <li>Nicholas Ramdin</li>
+                    <li>Edwin Samaniego</li>
+                  </ul>
+                </p>
+                `);
+              break;
+            case 'designers':
+              $("#meetTeam").html(
+                `
+                <h3>The 3D Designers</h3>
+                <p>
+                  <span class="team-description">
+                    This duo designed and developed the environment of the game using the Unity game engine. They implemented various 3D objects, materials, and other assets to create this world.
+                  </span>
+                  <ul class="list-items">
+                    <li>Julian Frost</li>
+                    <li>Bryan Pierre-Louis</li>
+                  </ul>
+                </p>
+              `);
+              break;
+        }
       };
     </script>
   </head>
@@ -75,7 +143,7 @@
         <h2>Contemplating Urban Environments</h2>
       </div>
       <div id="video">
-        
+
         <iframe
           width="640"
           height="340"
@@ -87,41 +155,29 @@
       <!-- DO NOT TOUCH THIS -->
       <div id="videoSliderNav">
         <ul id="videoNav">
-          <li
-            id="videoUrl"
-            onclick="getVideoUrl('https://player.vimeo.com/video/470055878')"
-          >
-            <img
-              src="https://player.vimeo.com/video/470055878"
-              alt="Future Justice"
-            />
+          <li>
+            <button id="videoButton"
+              onclick="getVideoUrl('https://player.vimeo.com/video/470055878')">
+              Future Justice
+            </button>
           </li>
-          <li
-            id="videoUrl"
-            onclick="getVideoUrl('https://player.vimeo.com/video/474506646')"
-          >
-            <img
-              src="https://player.vimeo.com/video/474506646"
-              alt="Climate Justice - The Present"
-            />
+          <li>
+            <button id="videoButton"
+              onclick="getVideoUrl('https://player.vimeo.com/video/474506646')">
+              Climate Justice - The Present
+            </button>
           </li>
-          <li
-            id="videoUrl"
-            onclick="getVideoUrl('https://www.youtube.com/embed/_ka--wpVilA')"
-          >
-            <img
-              src="https://www.youtube.com/embed/_ka--wpVilA"
-              alt="The Solution"
-            />
+          <li>
+            <button id="videoButton"
+              onclick="getVideoUrl('https://www.youtube.com/embed/_ka--wpVilA')">
+              The Solution
+            </button>
           </li>
-          <li
-            id="videoUrl"
-            onclick="getVideoUrl('https://player.vimeo.com/video/478016711')"
-          >
-            <img
-              src="https://player.vimeo.com/video/478016711"
-              alt="The Problem"
-            />
+          <li>
+            <button id="videoButton"
+              onclick="getVideoUrl('https://player.vimeo.com/video/478016711')">
+              The Problem
+            </button>
           </li>
         </ul>
       </div>
@@ -135,8 +191,25 @@
             <li>Lead Web Designer - Shanice Smith</li>
             <li>City Tech CLT - Kenny Chiu</li>
           </ul>
+          <br>
         </p>
+        <div id="meetTheTeam">
+          <li>
+            <button id="meetTheTeamButton" type="button" onclick="meetThe('soundTeam')">The Sound Designers</button>
+          </li>
+          <li>
+            <button id="meetTheTeamButton" type="button" onclick="meetThe('productManagers')">The Product Managers</button>
+          </li>
+          <li>
+            <button id="meetTheTeamButton" type="button" onclick="meetThe('programmers')">The Programmers</button>
+          </li>
+          <li>
+            <button id="meetTheTeamButton" type="button" onclick="meetThe('designers')">The 3D Designers</button>
+          </li>
+        </div>
+        <div id="meetTeam"></div>
 
+        <!-- <h3>The Product Managers</h3>
           <h3>The Sound Designers</h3>
           <p>
             <span class="team-description">
@@ -150,7 +223,6 @@
             </ul>
           </p>
 
-          <h3>The Product Managers</h3>
           <p>
             <span class="team-description">
               This team oversaw the general aspects of the project, and provided assistance to other groups in order to get necessary tasks completed in time.
@@ -200,10 +272,9 @@
               <li>Rayner Ramirez</li>
               <li>Rachel Shragis</li>
           </ul>
-          </p>
+          </p> -->
 
       </div>
-
       <footer>
         <a href="/" target="_blank">Play TrashTalk on itch.io</a>
         <p>© TrashTalk, 2020. Go Green!</p>

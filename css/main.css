@@ -142,17 +142,32 @@ footer a:hover {
 #play-btn:hover {
   background-color: #48a15b;
 }
-
 #videoNav{
   align-items: center;
   justify-content: center;
   display: flex;
+}
+#videoButton{
+  padding: 2rem 4rem;
 }
 
 #videoNav li{
   list-style: none;
   cursor: pointer;
   margin: 5rem;
+}
+#meetTheTeam{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#meetTheTeam li{
+  list-style: none;
+  cursor: pointer;
+  margin: 5rem;
+}
+#meetTheTeamButton{
+  padding: 2rem 4rem;
 }
 
 @media all and (max-width: 800px) {
