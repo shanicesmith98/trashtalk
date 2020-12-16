@@ -86,6 +86,7 @@ getVideoUrl = function (selected) {
                     <li>Saylor Pochan</li>
                     <li>Rayner Ramirez</li>
                     <li>Rachel Shragis</li>
+                    <li>Don "Guardian of Jamaica Bay" Reipe</li>
                 </ul>
                 </p>
             `);
